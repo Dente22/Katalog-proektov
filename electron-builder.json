@@ -1,0 +1,65 @@
+{
+  "appId": "local.project-cards",
+  "productName": "Каталог проектов",
+  "copyright": "Copyright © 2026",
+  "directories": {
+    "output": "release",
+    "buildResources": "build"
+  },
+  "files": [
+    "electron/**/*",
+    "renderer/**/*",
+    "assets/**/*",
+    "package.json"
+  ],
+  "extraResources": [
+    {
+      "from": "build/icon.ico",
+      "to": "icons/icon.ico"
+    },
+    {
+      "from": "build/icon.png",
+      "to": "icons/icon.png"
+    },
+    {
+      "from": "assets",
+      "to": "assets"
+    },
+    {
+      "from": ".cursor/skills",
+      "to": "skills-template"
+    },
+    {
+      "from": "defaults/user-config.json",
+      "to": "defaults/project-cards-config.json"
+    }
+  ],
+  "icon": "build/icon.ico",
+  "artifactName": "Katalog-proektov-Setup-${version}.${ext}",
+  "win": {
+    "target": [
+      {
+        "target": "nsis",
+        "arch": ["x64"]
+      }
+    ],
+    "icon": "build/icon.ico",
+    "executableName": "ProjectCatalog"
+  },
+  "nsis": {
+    "oneClick": false,
+    "perMachine": false,
+    "allowElevation": true,
+    "allowToChangeInstallationDirectory": true,
+    "createDesktopShortcut": "always",
+    "createStartMenuShortcut": true,
+    "shortcutName": "Каталог проектов",
+    "runAfterFinish": true,
+    "deleteAppDataOnUninstall": false,
+    "installerIcon": "build/icon.ico",
+    "uninstallerIcon": "build/icon.ico",
+    "installerHeaderIcon": "build/icon.ico",
+    "include": "build/installer.nsh",
+    "warningsAsErrors": false
+  }
+}

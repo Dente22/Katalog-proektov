@@ -1,0 +1,8 @@
+node_modules/
+release/
+dist/
+*.exe
+*.log
+.DS_Store
+Thumbs.db
+defaults/user-config.json
