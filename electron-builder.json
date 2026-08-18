@@ -35,7 +35,9 @@
     }
   ],
   "icon": "build/icon.ico",
+  "afterPack": "./scripts/after-pack.js",
   "artifactName": "Katalog-proektov-Setup-${version}.${ext}",
+  "forceCodeSigning": false,
   "win": {
     "target": [
       {
@@ -44,7 +46,9 @@
       }
     ],
     "icon": "build/icon.ico",
-    "executableName": "ProjectCatalog"
+    "executableName": "ProjectCatalog",
+    "signAndEditExecutable": false,
+    "signDlls": false
   },
   "nsis": {
     "oneClick": false,
@@ -54,11 +58,14 @@
     "createDesktopShortcut": "always",
     "createStartMenuShortcut": true,
     "shortcutName": "Каталог проектов",
+    "uninstallDisplayName": "Каталог проектов",
     "runAfterFinish": true,
     "deleteAppDataOnUninstall": false,
     "installerIcon": "build/icon.ico",
     "uninstallerIcon": "build/icon.ico",
     "installerHeaderIcon": "build/icon.ico",
+    "installerLanguages": ["ru_RU", "en_US"],
+    "unicode": true,
     "include": "build/installer.nsh",
     "warningsAsErrors": false
   }

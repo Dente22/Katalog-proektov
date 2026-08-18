@@ -9,8 +9,9 @@
   "scripts": {
     "start": "electron .",
     "dev": "electron .",
-    "dist": "electron-builder --config electron-builder.json --win && node scripts/write-update-manifest.js",
-    "dist:dir": "electron-builder --config electron-builder.json --win dir"
+    "prepare-dist": "node scripts/prepare-dist.js",
+    "dist": "node scripts/prepare-dist.js && electron-builder --config electron-builder.json --win --publish never && node scripts/write-update-manifest.js",
+    "dist:dir": "node scripts/prepare-dist.js && electron-builder --config electron-builder.json --win dir --publish never"
   },
   "devDependencies": {
     "electron": "^33.2.0",

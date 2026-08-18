@@ -2,6 +2,8 @@ node_modules/
 release/
 dist/
 *.exe
+!scripts/rcedit-x64.exe
+!installer/*.exe
 *.log
 .DS_Store
 Thumbs.db
