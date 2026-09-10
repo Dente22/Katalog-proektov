@@ -30,7 +30,7 @@ npm start
 
 ## Скачать
 
-Готовый установщик Windows: [installer/Katalog-proektov-Setup-1.1.4.exe](installer/Katalog-proektov-Setup-1.1.4.exe)
+Готовый установщик Windows: [Releases](https://github.com/Dente22/Katalog-proektov/releases) → `Katalog-proektov-Setup-*.exe` (актуальный: **v1.1.4**).
 
 Запустите Setup — появятся ярлыки на рабочем столе и в меню «Пуск». Настройки в AppData при обновлении не стираются.
 
