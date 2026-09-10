@@ -30,7 +30,7 @@ npm start
 
 ## Скачать
 
-Готовый установщик Windows: [installer/Katalog-proektov-Setup-1.1.3.exe](installer/Katalog-proektov-Setup-1.1.3.exe)
+Готовый установщик Windows: [installer/Katalog-proektov-Setup-1.1.4.exe](installer/Katalog-proektov-Setup-1.1.4.exe)
 
 Запустите Setup — появятся ярлыки на рабочем столе и в меню «Пуск». Настройки в AppData при обновлении не стираются.
 
@@ -42,7 +42,7 @@ npm start
 build.bat
 ```
 
-Готовый файл: `release\Katalog-proektov-Setup-1.1.3.exe`.
+Готовый файл: `release\Katalog-proektov-Setup-1.1.4.exe`.
 
 - Мастер установки (можно выбрать папку)
 - Ярлыки на рабочем столе и в меню «Пуск»
